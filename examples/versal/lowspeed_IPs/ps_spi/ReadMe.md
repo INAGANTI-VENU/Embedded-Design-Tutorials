@@ -55,8 +55,10 @@ Here is a list of the required hardware to run the example design:
 
 1. Vitis offers few PS-I2C based example application projects. These can be selected on the second page of the New Application Project dialogue.
 
-  ## Validation
-Here you will place example validation that you've done that the customer can repeat. This improves confidence in the design, and gives a good test for the customer to run initially. Shown below are Linux and Vitis examples:
+
+## Note
+Since there is no slave device over the VCK190 card IOs are routed through EMIO b/w both the controllers to check the clock, ss, data over MOSI.
+Please find the corresponding ILA scope shots in the log.
 
   ### Linux:
 
@@ -118,9 +120,6 @@ Log:
 ILA Scopeshots:
 ![SS0_BM](https://user-images.githubusercontent.com/74894579/157439090-aecb3ed8-153c-457c-b5d8-0c6d139b2399.JPG)
 
-## Note
-Since there is no slave device over the VCK190 card IOs are routed through EMIO b/w both the controllers to check the clock, ss, data over MOSI.
-Please find the corresponding ILA scope shots in the log.
 
 
 ## Known Issues
